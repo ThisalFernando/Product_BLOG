@@ -16,7 +16,7 @@ const Footer = () => {
         <footer className='bg-black text-white font-bold text-center p-4 mt-0'>
             <div className='flex justify-between items-start gap-20 flex-wrap max-lg:flex-col mr-20 ml-20'>
                 <div className='flex flex-col items-start'>
-                    <a href='https://res.cloudinary.com/fmart/image/upload/v1743634267/FMLogo_nktw1c.png' className='flex font-semibold font-montserrat leading-normal items-center text-xl text-coral-red ' >
+                    <a href='https://res.cloudinary.com/fmart/image/upload/v1751039531/PBLogo_iwqv01.png' className='flex font-semibold font-montserrat leading-normal items-center text-xl text-coral-red ' >
                         <img src={ PBLogo } alt='logo' width={200} height={200} /> 
                     </a>
                     <div className='flex items-center gap-7 mt-4'>
@@ -25,7 +25,7 @@ const Footer = () => {
                           className='flex justify-center items-center w-12 h-12 bg-white rounded-2xl'
                           key={icon.alt}
                         >
-                        <a href='https://res.cloudinary.com/fmart/image/upload/v1743634267/FMLogo_nktw1c.png'>
+                        <a href='https://res.cloudinary.com/fmart/image/upload/v1751039531/PBLogo_iwqv01.png'>
                           <img src={icon.src} alt={icon.alt} width={24} height={24} />
                         </a>
                         </div>
