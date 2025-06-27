@@ -29,7 +29,7 @@ const Register = () => {
         icon: "success",
         confirmButtonText: "Okay",
         customClass: {
-          confirmButton: 'w-[400px] bg-yellow-600 hover:bg-black text-white font-bold py-2 px-4 rounded-lg transition duration-300'
+          confirmButton: 'w-[200px] sm:w-[400px] bg-yellow-600 hover:bg-black text-white font-bold py-2 px-4 rounded-lg transition duration-300'
         },
         buttonsStyling: false,
       }).then((result) => {
@@ -44,7 +44,7 @@ const Register = () => {
         icon: "error",
         confirmButtonText: "Try Again!",
         customClass: {
-          confirmButton: 'w-[400px] bg-red hover:bg-black text-white font-bold py-2 px-4 rounded-lg transition duration-300'
+          confirmButton: 'w-[200px] sm:w-[400px] bg-red hover:bg-black text-white font-bold py-2 px-4 rounded-lg transition duration-300'
         },
         buttonsStyling: false,
       });
@@ -53,7 +53,7 @@ const Register = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-[url('https://res.cloudinary.com/fmart/image/upload/v1750896916/diminishing-perspective-old-archive-shelves-glow-generated-by-ai_xlmccb.jpg')] bg-cover bg-center bg-no-repeat pt-20 pb-20 mt-14">
-      <div className="bg-white p-8 rounded-lg shadow-lg w-[500px]">
+      <div className="bg-white p-8 rounded-lg shadow-lg w-90 sm:w-[500px]">
         <h2 className="text-2xl font-bold text-center mb-6">USER REGISTRATION</h2>
         <hr/><br/>
         <form onSubmit={handleSubmit}>

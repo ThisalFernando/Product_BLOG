@@ -9,6 +9,7 @@ import PBLogo from "../asserts/PBLogo.png";
 
 // Method to add new products in the DB
 const AddProduct = () => {
+    document.title = "PRODUCT BLOG | Add Product";
     const navigate = useNavigate();
     const [form, setForm] = useState({
         name: "",
@@ -31,7 +32,7 @@ const AddProduct = () => {
             icon: "success",
             confirmButtonText: "Okay!",
             customClass: {
-                confirmButton: 'w-[400px] bg-yellow-600 hover:bg-black text-white font-bold py-2 px-4 rounded-lg transition duration-300'
+                confirmButton: 'w-[200px] sm:w-[400px] bg-yellow-600 hover:bg-black text-white font-bold py-2 px-4 rounded-lg transition duration-300'
             },
             buttonsStyling: false,
         }).then((result) => {
@@ -47,7 +48,7 @@ const AddProduct = () => {
             icon: "error",
             confirmButtonText: "Try Again!",
             customClass: {
-                confirmButton: 'w-[400px] bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded-lg transition duration-300'
+                confirmButton: 'w-[200px] sm:w-[400px] bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded-lg transition duration-300'
             },
             buttonsStyling: false,
         });

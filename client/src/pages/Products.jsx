@@ -5,6 +5,7 @@ import { Trash2, Pencil } from "lucide-react";
 import PBLogo from "../asserts/PBLogo.png";
 
 const ProductList = () => {
+    document.title = "PRODUCT BLOG | Products";
     const [products, setProducts] = useState([]);
     const [editingId, setEditingId] = useState(null);
     const [editData, setEditData] = useState({ name: "", price: "", quantity: "" });
@@ -34,7 +35,7 @@ const ProductList = () => {
             icon: "success",
             confirmButtonText: "Okay",
             customClass: {
-                confirmButton: 'w-[400px] bg-yellow-600 hover:bg-black text-white font-bold py-2 px-4 rounded-lg transition duration-300'
+                confirmButton: 'w-[200px] sm:w-[400px] bg-yellow-600 hover:bg-black text-white font-bold py-2 px-4 rounded-lg transition duration-300'
             },
             buttonsStyling: false,
         });
@@ -46,7 +47,7 @@ const ProductList = () => {
             icon: "error",
             confirmButtonText: "Try Again",
             customClass: {
-                confirmButton: 'w-[400px] bg-red-600 hover:bg-black text-white font-bold py-2 px-4 rounded-lg transition duration-300'
+                confirmButton: 'w-[200px] sm:w-[400px] bg-red-600 hover:bg-black text-white font-bold py-2 px-4 rounded-lg transition duration-300'
             },
             buttonsStyling: false,
         });
@@ -78,7 +79,7 @@ const ProductList = () => {
             icon: "success",
             confirmButtonText: "Okay",
             customClass: {
-                confirmButton: 'w-[400px] bg-yellow-600 hover:bg-black text-white font-bold py-2 px-4 rounded-lg transition duration-300'
+                confirmButton: 'w-[200px] sm:w-[400px] bg-yellow-600 hover:bg-black text-white font-bold py-2 px-4 rounded-lg transition duration-300'
             },
             buttonsStyling: false,
         });
@@ -91,7 +92,7 @@ const ProductList = () => {
             icon: "error",
             confirmButtonText: "Try Again",
             customClass: {
-                confirmButton: 'w-[400px] bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded-lg transition duration-300'
+                confirmButton: 'w-[200px] sm:w-[400px] bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded-lg transition duration-300'
             },
             buttonsStyling: false,
         });
@@ -194,13 +195,13 @@ const ProductList = () => {
                             onClick={() => startEdit(product)}
                             className="text-blue-500 hover:text-blue-700"
                             >
-                            <Pencil size={20} />
+                            <Pencil className="w-5 h-5 sm:w-6 sm:h-6" />
                             </button>
                             <button
                             onClick={() => handleDelete(product._id)}
                             className="text-red-600 hover:text-red-600"
                             >
-                            <Trash2 size={20} />
+                            <Trash2 className="w-5 h-5 sm:w-6 sm:h-6" />
                             </button>
                         </div>
                         </>
